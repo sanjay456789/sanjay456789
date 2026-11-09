@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img" aria-labelledby="title desc">
+  <title id="title">Currently building</title>
+  <desc id="desc">Small projects I experiment with, learn from, and keep improving.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14162b"/><stop offset="1" stop-color="#0d2233"/></linearGradient>
+    <style>
+      .line { stroke-dasharray: 260; stroke-dashoffset: 260; animation: draw 5s ease-out infinite; }
+      .l2 { animation-delay: -1.2s; }
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes draw { 0% { stroke-dashoffset: 260; } 50%, 100% { stroke-dashoffset: 0; } }
+      @keyframes blink { 50% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .line, .cursor { animation: none; stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <rect width="500" height="200" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="498" height="198" rx="21" fill="none" stroke="#78a9ff" stroke-opacity=".25"/>
+  <rect x="300" y="28" width="172" height="28" rx="8" fill="#ffffff" opacity=".05"/>
+  <circle cx="314" cy="42" r="4" fill="#ff7ad9"/><circle cx="326" cy="42" r="4" fill="#ffd166"/><circle cx="338" cy="42" r="4" fill="#70f0d0"/>
+
+  <text x="28" y="40" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" letter-spacing="2" fill="#78a9ff">04 · BUILDING</text>
+  <text x="28" y="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f5f7ff">Small projects, big curiosity</text>
+  <text x="28" y="108" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">Experiments that teach me something</text>
+  <text x="28" y="130" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">new every time I open the editor.</text>
+
+  <g font-family="monospace" font-size="14" fill="none" stroke="#78a9ff" stroke-width="3" stroke-linecap="round" stroke-opacity=".8">
+    <path class="line" d="M28 160 H200"/>
+    <path class="line l2" d="M28 178 H150"/>
+  </g>
+  <rect class="cursor" x="206" y="150" width="8" height="14" fill="#5ef2ff"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img" aria-labelledby="title desc">
+  <title id="title">Learning</title>
+  <desc id="desc">Learning takes time. I keep practicing, one small step after another.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101f33"/><stop offset="1" stop-color="#0f2a2e"/></linearGradient>
+    <style>
+      .bub { animation: rise 6s linear infinite; }
+      .b2 { animation-delay: -2s; }
+      .b3 { animation-delay: -4s; }
+      .step { animation: chase 2.4s ease-in-out infinite; }
+      .s2 { animation-delay: -0.4s; }
+      .s3 { animation-delay: -0.8s; }
+      .s4 { animation-delay: -1.2s; }
+      .s5 { animation-delay: -1.6s; }
+      .s6 { animation-delay: -2s; }
+      @keyframes rise { 0% { transform: translateY(30px); opacity: 0; } 20% { opacity: .6; } 100% { transform: translateY(-190px); opacity: 0; } }
+      @keyframes chase { 0%, 100% { fill: #ffffff; opacity: .15; } 30% { fill: #70f0d0; opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .bub, .step { animation: none; } }
+    </style>
+  </defs>
+  <rect width="500" height="200" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="498" height="198" rx="21" fill="none" stroke="#70f0d0" stroke-opacity=".25"/>
+
+  <g class="bub" fill="#70f0d0" opacity=".12"><circle cx="440" cy="190" r="18"/></g>
+  <g class="bub b2" fill="none" stroke="#78a9ff" stroke-opacity=".5"><circle cx="390" cy="190" r="10"/></g>
+  <g class="bub b3" fill="#70f0d0" opacity=".15"><circle cx="470" cy="190" r="7"/></g>
+
+  <text x="28" y="40" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" letter-spacing="2" fill="#70f0d0">03 · LEARNING</text>
+  <text x="28" y="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f5f7ff">Learning takes time</text>
+  <text x="28" y="108" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">I'm always picking up new tools and</text>
+  <text x="28" y="130" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">ideas, and practicing them in projects.</text>
+
+  <g>
+    <circle class="step" cx="36" cy="168" r="6" fill="#ffffff" opacity=".15"/>
+    <circle class="step s2" cx="60" cy="168" r="6" fill="#ffffff" opacity=".15"/>
+    <circle class="step s3" cx="84" cy="168" r="6" fill="#ffffff" opacity=".15"/>
+    <circle class="step s4" cx="108" cy="168" r="6" fill="#ffffff" opacity=".15"/>
+    <circle class="step s5" cx="132" cy="168" r="6" fill="#ffffff" opacity=".15"/>
+    <circle class="step s6" cx="156" cy="168" r="6" fill="#ffffff" opacity=".15"/>
+  </g>
+</svg>

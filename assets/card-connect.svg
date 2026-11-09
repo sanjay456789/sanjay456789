@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img" aria-labelledby="title desc">
+  <title id="title">Let's connect</title>
+  <desc id="desc">Ideas, suggestions, and kind feedback are always welcome.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f1333"/><stop offset="1" stop-color="#0f1b2e"/></linearGradient>
+    <linearGradient id="hue" x1="0" x2="1"><stop offset="0" stop-color="#ff7ad9"/><stop offset="1" stop-color="#5ef2ff"/></linearGradient>
+    <style>
+      .ripple { transform-box: view-box; transform-origin: 400px 100px; animation: ripple 3s ease-out infinite; }
+      .r2 { animation-delay: -1s; }
+      .r3 { animation-delay: -2s; }
+      .dot { animation: beat 1.6s ease-in-out infinite; transform-box: view-box; transform-origin: 400px 100px; }
+      @keyframes ripple { 0% { transform: scale(.3); opacity: .8; } 100% { transform: scale(2.2); opacity: 0; } }
+      @keyframes beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+      @media (prefers-reduced-motion: reduce) { .ripple, .dot { animation: none; } }
+    </style>
+  </defs>
+  <rect width="500" height="200" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="498" height="198" rx="21" fill="none" stroke="#ff7ad9" stroke-opacity=".25"/>
+
+  <circle class="ripple" cx="400" cy="100" r="40" fill="none" stroke="#ff7ad9" stroke-width="2"/>
+  <circle class="ripple r2" cx="400" cy="100" r="40" fill="none" stroke="#5ef2ff" stroke-width="2"/>
+  <circle class="ripple r3" cx="400" cy="100" r="40" fill="none" stroke="#b58cff" stroke-width="2"/>
+  <circle class="dot" cx="400" cy="100" r="26" fill="url(#hue)"/>
+  <text x="400" y="108" text-anchor="middle" font-size="22" fill="#ffffff">✉</text>
+
+  <text x="28" y="40" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" letter-spacing="2" fill="#ff7ad9">05 · LET'S CONNECT</text>
+  <text x="28" y="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f5f7ff">Say hello</text>
+  <text x="28" y="108" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">Have an idea, a suggestion, or a kind</text>
+  <text x="28" y="130" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">bit of feedback? I'd love to hear it.</text>
+  <text x="28" y="172" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#9eabc9">github.com/sanjay456789</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I'm Sanjay</title>
+  <desc id="desc">Welcome banner with rising bubbles and a typing greeting.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1d33"/>
+      <stop offset="1" stop-color="#1b0f3a"/>
+    </linearGradient>
+    <linearGradient id="hue" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ef2ff"/>
+      <stop offset="0.5" stop-color="#b58cff"/>
+      <stop offset="1" stop-color="#ff7ad9"/>
+    </linearGradient>
+    <clipPath id="typeClip"><rect class="typeRect" x="60" y="120" width="0" height="60"/></clipPath>
+    <style>
+      .name { font-family: 'Segoe UI', Inter, Arial, sans-serif; font-size: 58px; font-weight: 800; fill: url(#hue); }
+      .sub { font-family: 'Segoe UI', Inter, Arial, sans-serif; font-size: 26px; fill: #cfd8ff; }
+      .typeRect { animation: type 5s steps(18, end) infinite; }
+      .rise { animation: rise 9s linear infinite; }
+      .d1 { animation-delay: -2s; }
+      .d2 { animation-delay: -4s; }
+      .d3 { animation-delay: -6s; }
+      .d4 { animation-delay: -7s; }
+      .sway { animation: sway 4s ease-in-out infinite; }
+      @keyframes rise {
+        0% { transform: translateY(280px); opacity: 0; }
+        15% { opacity: .7; }
+        100% { transform: translateY(-300px); opacity: 0; }
+      }
+      @keyframes sway {
+        0%, 100% { transform: translateX(-10px); }
+        50% { transform: translateX(10px); }
+      }
+      @keyframes type { 0%, 10% { width: 0; } 70%, 100% { width: 420px; } }
+      @media (prefers-reduced-motion: reduce) {
+        .rise, .sway, .typeRect { animation: none; }
+        .typeRect { width: 420px; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="260" rx="28" fill="url(#bg)"/>
+  <rect x="1" y="1" width="998" height="258" rx="27" fill="none" stroke="#5ef2ff" stroke-opacity=".25"/>
+
+  <g class="rise" fill="none" stroke="#5ef2ff" stroke-opacity=".5"><circle cx="110" cy="240" r="14"/></g>
+  <g class="rise d1" fill="#b58cff" opacity=".25"><circle cx="880" cy="250" r="22"/></g>
+  <g class="rise d2" fill="none" stroke="#ff7ad9" stroke-opacity=".6"><circle cx="760" cy="240" r="10"/></g>
+  <g class="rise d3" fill="#5ef2ff" opacity=".18"><circle cx="420" cy="250" r="30"/></g>
+  <g class="rise d4" fill="none" stroke="#b58cff" stroke-opacity=".5"><circle cx="600" cy="240" r="18"/></g>
+  <g class="rise d2" fill="#ffffff" opacity=".12"><circle cx="250" cy="250" r="8"/></g>
+  <g class="sway"><circle cx="905" cy="60" r="34" fill="#5ef2ff" opacity=".08"/></g>
+  <g class="sway" style="animation-delay:-2s"><circle cx="70" cy="200" r="26" fill="#ff7ad9" opacity=".08"/></g>
+
+  <text x="60" y="110" class="name">Hi, I'm Sanjay 👋</text>
+  <text x="60" y="160" class="sub" fill="#cfd8ff" clip-path="url(#typeClip)">Learning takes time.</text>
+  <text x="60" y="200" class="sub" font-size="18" fill="#8f9cd1" letter-spacing="2">BUILD • LEARN • SHARE</text>
+</svg>

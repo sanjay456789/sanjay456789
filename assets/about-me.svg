@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220" role="img" aria-labelledby="title desc">
+  <title id="title">About me</title>
+  <desc id="desc">I am a learner who builds things to understand them, and shares what I pick up along the way.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b2e"/><stop offset="1" stop-color="#211a3d"/></linearGradient>
+    <linearGradient id="ring" x1="0" x2="1"><stop offset="0" stop-color="#5ef2ff"/><stop offset="1" stop-color="#ff7ad9"/></linearGradient>
+    <style>
+      .orbit { animation: spin 10s linear infinite; transform-origin: 830px 110px; }
+      .pulse { animation: pulse 3s ease-in-out infinite; transform-origin: 830px 110px; }
+      .bubble { animation: rise 7s linear infinite; }
+      .b2 { animation-delay: -3s; }
+      .b3 { animation-delay: -5s; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.06); opacity: .5; } }
+      @keyframes rise { 0% { transform: translateY(40px); opacity: 0; } 20% { opacity: .6; } 100% { transform: translateY(-200px); opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .orbit, .pulse, .bubble { animation: none; } }
+    </style>
+  </defs>
+  <rect width="1000" height="220" rx="26" fill="url(#bg)"/>
+  <rect x="1" y="1" width="998" height="218" rx="25" fill="none" stroke="#5ef2ff" stroke-opacity=".22"/>
+
+  <g class="bubble" fill="#5ef2ff" opacity=".15"><circle cx="520" cy="200" r="16"/></g>
+  <g class="bubble b2" fill="none" stroke="#ff7ad9" stroke-opacity=".5"><circle cx="600" cy="200" r="10"/></g>
+  <g class="bubble b3" fill="#b58cff" opacity=".2"><circle cx="680" cy="200" r="22"/></g>
+
+  <text x="50" y="62" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" letter-spacing="3" fill="#5ef2ff">01 · ABOUT ME</text>
+  <text x="50" y="108" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="url(#ring)">Hello, I'm Sanjay Bhoye</text>
+  <text x="50" y="150" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#cfd8ff">I learn by building, and I like making ideas</text>
+  <text x="50" y="178" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#cfd8ff">useful one small step at a time.</text>
+
+  <g class="pulse"><circle cx="830" cy="110" r="70" fill="none" stroke="url(#ring)" stroke-width="2" stroke-dasharray="6 10" opacity=".7"/></g>
+  <g class="orbit">
+    <circle cx="830" cy="40" r="7" fill="#5ef2ff"/>
+    <circle cx="900" cy="110" r="5" fill="#ff7ad9"/>
+    <circle cx="830" cy="180" r="6" fill="#b58cff"/>
+  </g>
+  <circle cx="830" cy="110" r="24" fill="#ffffff" opacity=".08"/>
+</svg>

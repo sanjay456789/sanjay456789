@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img" aria-labelledby="title desc">
+  <title id="title">Teaching</title>
+  <desc id="desc">I share what I learn by explaining it simply, so others can build on it too.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#132238"/><stop offset="1" stop-color="#1d1638"/></linearGradient>
+    <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#5ef2ff"/><stop offset="1" stop-color="#b58cff"/></linearGradient>
+    <style>
+      .grow { transform-box: fill-box; transform-origin: left center; animation: grow 4s ease-in-out infinite; }
+      .g2 { animation-delay: -1s; }
+      .g3 { animation-delay: -2s; }
+      .blip { animation: blip 2s ease-out infinite; }
+      @keyframes grow { 0%, 100% { transform: scaleX(.3); } 50% { transform: scaleX(1); } }
+      @keyframes blip { 0% { transform: scale(.6); opacity: 1; } 100% { transform: scale(2.4); opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .grow, .blip { animation: none; } }
+    </style>
+  </defs>
+  <rect width="500" height="200" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="498" height="198" rx="21" fill="none" stroke="#b58cff" stroke-opacity=".25"/>
+  <text x="28" y="40" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" letter-spacing="2" fill="#b58cff">02 · TEACHING</text>
+  <text x="28" y="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f5f7ff">Explain it, then share it</text>
+  <text x="28" y="108" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">Simple notes, clear examples, and</text>
+  <text x="28" y="130" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#c5cce2">helping others get unstuck.</text>
+  <rect x="28" y="160" width="180" height="8" rx="4" fill="#ffffff" opacity=".08"/>
+  <rect class="grow" x="28" y="160" width="180" height="8" rx="4" fill="url(#bar)"/>
+  <rect x="28" y="176" width="180" height="8" rx="4" fill="#ffffff" opacity=".08"/>
+  <rect class="grow g2" x="28" y="176" width="180" height="8" rx="4" fill="url(#bar)" opacity=".8"/>
+  <g transform="translate(410 100)"><circle class="blip" r="14" fill="none" stroke="#b58cff" stroke-width="2"/><circle r="6" fill="#5ef2ff"/></g>
+</svg>
